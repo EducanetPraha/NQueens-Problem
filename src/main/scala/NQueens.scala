@@ -15,5 +15,11 @@ object NQueens {
     placeQueens(n)
   }
 
-  def isSafe(col: Int, queens: List[Int]): Boolean = ???
+  def isSafe(col: Int, queens: List[Int]): Boolean = {
+    val row = queens.length
+    val queensWithRow = (row - 1 to 0 by -1) zip queens
+    queensWithRow forall {
+      case (r, c) => ???
+    }
+  }
 }
